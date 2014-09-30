@@ -3,6 +3,7 @@ package com.codurance.acceptancetests;
 import com.codurance.Console;
 import com.codurance.Post;
 import com.codurance.Timeline;
+import com.codurance.Twitter;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -30,7 +31,8 @@ public class ConsoleSteps {
 
     @Then("^I should see \"(.*?)\"$")
     public void i_should_see(String arg1) throws Throwable {
-        Console console = new Console();
+        Twitter twitter = new Twitter();
+        Console console = new Console(twitter);
         console.print("Does anyone like beer?");
     }
 
