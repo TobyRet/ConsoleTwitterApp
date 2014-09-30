@@ -34,20 +34,44 @@ formatter.step({
   "name": "I should see \"Does anyone like beer?\"",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "Does anyone like beer?",
+      "offset": 18
+    }
+  ],
+  "location": "ConsoleSteps.i_have_a_message(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 743530000,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "ConsoleSteps.i_post_my_message()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 65000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ConsoleSteps.view_my_timeline()"
+});
+formatter.result({
+  "duration": 69000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Does anyone like beer?",
+      "offset": 14
+    }
+  ],
+  "location": "ConsoleSteps.i_should_see(String)"
+});
+formatter.result({
+  "duration": 89000,
+  "status": "passed"
 });
 });
