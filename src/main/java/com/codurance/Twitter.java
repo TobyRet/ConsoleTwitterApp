@@ -1,7 +1,13 @@
 package com.codurance;
 
 public class Twitter {
-    public void acceptUserRequest(String post) {
+    private Actions actions;
 
+    public Twitter(Actions actions) {
+        this.actions = actions;
+    }
+
+    public void acceptUserRequest(String userInput) {
+        actions.execute(userInput);
     }
 }
