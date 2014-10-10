@@ -6,3 +6,10 @@ Feature: Post a message
     When I post my message
     And view my timeline
     Then I should see "Does anyone like beer?"
+
+  Scenario: View timeline
+
+    Given I post a message "Does anyone like beer?"
+    When I view my timeline
+    Then I should see "Does anyone like beer?"
+

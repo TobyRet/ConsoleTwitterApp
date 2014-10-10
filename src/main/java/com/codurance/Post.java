@@ -16,6 +16,7 @@ public class Post implements Actions {
 
     public void execute(String userInput) {
         User user = getOrCreateUser(userInput);
+        user.addPost(extractPostFromInput(userInput));
     }
 
     public User getOrCreateUser(String userInput) {

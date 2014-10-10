@@ -17,11 +17,14 @@ public class PostShould {
     private String userInput;
     private Post post;
     private Repository repository;
+    private User alice;
 
     @Before public void
     initialise() {
         userInput = "Alice -> Does anyone like beer?";
+        alice = mock(User.class);
         repository = mock(Repository.class);
+        when(repository.findOrCreate("Alice")).thenReturn(alice);
         post = new Post(repository);
     }
 
@@ -38,13 +41,12 @@ public class PostShould {
     @Test public void
     get_user_from_repository() {
         post.getOrCreateUser(userInput);
-        User alice = mock(User.class);
-        when(repository.findOrCreate("Alice")).thenReturn(alice);
         verify(repository).findOrCreate("Alice");
     }
 
     @Test public void
     add_post_to_user_account() {
-        
+        post.execute(userInput);
+        verify(alice).addPost("Does anyone like beer?");
     }
 }
