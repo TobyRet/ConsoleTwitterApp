@@ -16,7 +16,7 @@ public class ConsoleSteps {
     @When("^I post my message$")
     public void i_post_my_message() throws Throwable {
         String message = "Does anyone like beer?";
-        Post post = new Post();
+        Post post = new Post(new Repository());
         post.execute(message);
     }
 

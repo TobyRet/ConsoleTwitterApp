@@ -1,5 +1,7 @@
 package com.codurance;
 
-public interface Repository {
-    public User findOrCreate(String userName);
+public class Repository {
+    public User findOrCreate(String userName) {
+        return null;
+    };
 }

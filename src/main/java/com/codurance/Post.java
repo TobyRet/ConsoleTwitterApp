@@ -2,19 +2,33 @@ package com.codurance;
 
 public class Post implements Actions {
 
-    @Override
+    private Repository repository;
+
+    public Post(Repository repository) {
+        this.repository = repository;
+    }
+
     public void checkIfValidRequest(String userInput) {
         if (userInput.contains("->")) {
-            this.execute(userInput);
-        };
+            execute(userInput);
+        }
     }
 
-    public String execute(String userInput) {
-        return getName(userInput);
+    public void execute(String userInput) {
+        User user = getOrCreateUser(userInput);
     }
 
-    private String getName(String userInput) {
+    public User getOrCreateUser(String userInput) {
+        return repository.findOrCreate(extractNameFromInput(userInput));
+    }
+
+    public String extractNameFromInput(String userInput) {
         String[] splitUserInput = userInput.split(" ");
         return splitUserInput[0];
+    }
+
+    public String extractPostFromInput(String userInput) {
+        String[] splitUserInput = userInput.split("-> ");
+        return splitUserInput[1];
     }
 }
