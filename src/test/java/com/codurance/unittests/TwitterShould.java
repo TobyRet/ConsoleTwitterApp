@@ -12,14 +12,13 @@ import static org.mockito.Mockito.verify;
 @RunWith(MockitoJUnitRunner.class)
 public class TwitterShould {
 
-    @Mock
-    Actions actions;
+    @Mock Actions actions;
 
     @Test public void
     read_user_input_from_console_and_direct_request() {
         Twitter twitter = new Twitter(actions);
         String userInput = "Alice -> does anyone like beer?";
-        twitter.acceptUserRequest(userInput);
-        verify(actions).execute(userInput);
+        twitter.handleUserRequest(userInput);
+        verify(actions).checkIfValidRequest(userInput);
     }
 }

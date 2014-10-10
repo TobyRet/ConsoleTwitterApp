@@ -20,6 +20,6 @@ public class ConsoleShould {
         String post = "Alice -> Does anyone like beer?";
         Console console = new Console(twitter);
         console.storeInput(post);
-        verify(twitter).acceptUserRequest(post);
+        verify(twitter).handleUserRequest(post);
     }
 }

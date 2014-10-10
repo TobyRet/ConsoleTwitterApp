@@ -7,13 +7,11 @@ public class Console {
         this.twitter = twitter;
     }
 
-
-
     public void print(String post) {
 
     }
 
     public void storeInput(String post) {
-        twitter.acceptUserRequest(post);
+        twitter.handleUserRequest(post);
     }
 }

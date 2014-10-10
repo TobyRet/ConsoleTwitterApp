@@ -7,7 +7,7 @@ public class Twitter {
         this.actions = actions;
     }
 
-    public void acceptUserRequest(String userInput) {
-        actions.execute(userInput);
+    public void handleUserRequest(String userInput) {
+        actions.checkIfValidRequest(userInput);
     }
 }
