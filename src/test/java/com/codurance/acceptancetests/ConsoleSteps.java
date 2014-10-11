@@ -5,6 +5,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class ConsoleSteps {
 
@@ -30,7 +33,9 @@ public class ConsoleSteps {
     public void i_should_see(String arg1) throws Throwable {
         Twitter twitter = new Twitter(null);
         Console console = new Console(twitter);
-        console.print("Does anyone like beer?");
+        List<String> posts = new ArrayList();
+        posts.add("Does anyone like beer?");
+        console.print(posts);
     }
 
 }

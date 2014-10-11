@@ -1,5 +1,7 @@
 package com.codurance;
 
+import java.util.List;
+
 public class Console {
     private Twitter twitter;
 
@@ -7,7 +9,7 @@ public class Console {
         this.twitter = twitter;
     }
 
-    public void print(String post) {
+    public void print(List<String> post) {
 
     }
 
