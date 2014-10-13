@@ -19,6 +19,6 @@ public class TwitterShould {
         Twitter twitter = new Twitter(actions);
         String userInput = "Alice -> does anyone like beer?";
         twitter.handleUserRequest(userInput);
-        verify(actions).checkIfValidRequest(userInput);
+        verify(actions).execute(userInput);
     }
 }

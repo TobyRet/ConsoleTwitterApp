@@ -1,5 +1,5 @@
 package com.codurance;
 
 public interface Actions {
-    void checkIfValidRequest(String userInput);
+    void execute(String userInput);
 }

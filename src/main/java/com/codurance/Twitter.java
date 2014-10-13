@@ -8,6 +8,6 @@ public class Twitter {
     }
 
     public void handleUserRequest(String userInput) {
-        actions.checkIfValidRequest(userInput);
+        actions.execute(userInput);
     }
 }
