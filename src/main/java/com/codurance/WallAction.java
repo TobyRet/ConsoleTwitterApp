@@ -1,10 +1,10 @@
 package com.codurance;
 
-public class Wall implements Actions {
+public class WallAction implements Actions {
     private final Repository repository;
     private final Console console;
 
-    public Wall(Repository repository, Console console) {
+    public WallAction(Repository repository, Console console) {
         this.repository = repository;
         this.console = console;
     }
@@ -12,8 +12,8 @@ public class Wall implements Actions {
     @Override
     public void execute(String userInput) {
         if(isValid(userInput)) {
-            retrieveUserAccount();
-//            user.getPosts();
+            User user = retrieveUserAccount();
+            console.print(user.getPosts());
         }
     }
 

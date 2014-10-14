@@ -11,11 +11,15 @@ public class PostAction implements Actions {
     public void execute(String userInput) {
         if (userInput.contains("->")) {
             User user = retrieveUserAccount(userInput);
-            user.addPost(getPost(userInput));
+            user.addPost(createPost(userInput));
         }
     }
 
-    private String getPost(String userInput) {
+    private Post createPost(String userInput) {
+        return new Post(getMessage(userInput));
+    }
+
+    private String getMessage(String userInput) {
         return userInput.split("-> ")[1];
     }
 

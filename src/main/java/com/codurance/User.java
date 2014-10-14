@@ -11,7 +11,7 @@ public class User {
         this.name = name;
     }
 
-    public void addPost(String post) {
+    public void addPost(Post post) {
 
     }
 
