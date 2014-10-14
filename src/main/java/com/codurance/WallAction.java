@@ -13,7 +13,7 @@ public class WallAction implements Actions {
     public void execute(String userInput) {
         if(isValid(userInput)) {
             User user = retrieveUserAccount();
-            console.print(user.getPosts());
+            console.print(user.getAllPosts());
         }
     }
 

@@ -39,10 +39,10 @@ public class WallActionShould {
         User alice = mock(User.class);
         when(repository.findOrCreate(any())).thenReturn(alice);
 
-        List<Post> alicePosts = new ArrayList<>();
-        alicePosts.add(POST_1);
-        alicePosts.add(POST_2);
-        when(alice.getPosts()).thenReturn(alicePosts);
+        List<Object> alicePosts = new ArrayList<>();
+//        alicePosts.add(POST_1);
+//        alicePosts.add(POST_2);
+        when(alice.getAllPosts()).thenReturn(alicePosts);
 
         wall.execute(VALID_INPUT);
         verify(console).print(alicePosts);

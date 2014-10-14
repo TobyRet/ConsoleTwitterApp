@@ -33,9 +33,7 @@ public class ConsoleSteps {
     public void i_should_see(String arg1) throws Throwable {
         Twitter twitter = new Twitter(null);
         Console console = new Console(twitter);
-        List<Post> posts = new ArrayList();
-        Post post = new Post("Does anyone like beer?");
-        posts.add(post);
+        List<Object> posts = new ArrayList();
         console.print(posts);
     }
 
