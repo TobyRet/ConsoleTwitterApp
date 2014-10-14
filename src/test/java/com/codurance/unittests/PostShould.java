@@ -4,7 +4,6 @@ import com.codurance.PostAction;
 import com.codurance.Repository;
 import com.codurance.User;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -29,14 +28,6 @@ public class PostShould {
     do_not_execute_if_command_is_not_valid() {
         postAction.execute(INVALID_REQUEST);
         verify(repository, never()).findOrCreate(any());
-    }
-
-    @Ignore
-    @Test
-    public void
-    retrieve_user_from_repository_if_request_is_valid() {
-        postAction.execute(VALID_REQUEST);
-        verify(repository).findOrCreate(any());
     }
 
     @Test

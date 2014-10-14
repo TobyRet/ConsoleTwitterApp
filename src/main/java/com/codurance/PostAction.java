@@ -10,7 +10,7 @@ public class PostAction implements Actions {
 
     public void execute(String userInput) {
         if (userInput.contains("->")) {
-            User user = retrieveUserAccount(userInput);
+            User user = retrieveUser(userInput);
             user.addPost(createPost(userInput));
         }
     }
@@ -23,7 +23,7 @@ public class PostAction implements Actions {
         return userInput.split("-> ")[1];
     }
 
-    private User retrieveUserAccount(String userInput) {
+    private User retrieveUser(String userInput) {
         return repository.findOrCreate(getUserName(userInput));
     }
 
