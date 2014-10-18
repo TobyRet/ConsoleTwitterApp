@@ -4,4 +4,8 @@ public class Repository {
     public User findOrCreate(String userName) {
         return null;
     };
+
+    public void add(Post post) {
+
+    }
 }

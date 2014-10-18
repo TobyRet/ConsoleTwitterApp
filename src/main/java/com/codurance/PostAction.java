@@ -10,24 +10,16 @@ public class PostAction implements Actions {
 
     public void execute(String userInput) {
         if (userInput.contains("->")) {
-            User user = retrieveUser(userInput);
-            user.addPost(createPost(userInput));
+            Post post = new Post(getUser(userInput), getMessage(userInput));
+            repository.add(post);
         }
-    }
-
-    private Post createPost(String userInput) {
-        return new Post(getMessage(userInput));
     }
 
     private String getMessage(String userInput) {
         return userInput.split("-> ")[1];
     }
 
-    private User retrieveUser(String userInput) {
-        return repository.findOrCreate(getUserName(userInput));
-    }
-
-    private String getUserName(String userInput) {
+    private String getUser(String userInput) {
         return userInput.split(" ")[0];
     }
 
