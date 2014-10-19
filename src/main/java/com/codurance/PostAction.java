@@ -1,5 +1,7 @@
 package com.codurance;
 
+import static java.time.LocalDateTime.now;
+
 public class PostAction implements Actions {
 
     private Repository repository;
@@ -10,9 +12,14 @@ public class PostAction implements Actions {
 
     public void execute(String userInput) {
         if (userInput.contains("->")) {
-            Post post = new Post(getUser(userInput), getMessage(userInput));
+            String dts = new DateTimeStamp(now()).getLocalDateTime();
+            Post post = new Post(getUser(userInput), getMessage(userInput), dts);
             repository.add(post);
         }
+    }
+
+    private String createDateTimeStamp() {
+        return new DateTimeStamp(now()).getLocalDateTime();
     }
 
     private String getMessage(String userInput) {

@@ -7,7 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
+import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
@@ -36,9 +38,16 @@ public class PostActionShould {
     public void
     add_post_to_user_account() {
         ArgumentCaptor<Post> argument = ArgumentCaptor.forClass(Post.class);
+
+//        DateTimeStamp dateTimeStamp = mock(DateTimeStamp.class);
+//        when(dateTimeStamp.getLocalDateTime()).thenReturn("2014-10-19T08:30");
+
         postAction.execute(VALID_REQUEST);
+
         verify(repository).add(argument.capture());
+        assertThat(argument.getValue(), instanceOf(Post.class));
         assertEquals("Alice", argument.getValue().getUser());
         assertEquals("Does anyone like beer?", argument.getValue().getMessage());
+        //assertEquals("2014-10-19T08:30", argument.getValue().getDateTimeStamp());
     }
 }

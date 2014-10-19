@@ -1,9 +1,16 @@
 package com.codurance;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class DateTimeStamp {
-    public Date create() {
-        return null;
+    private final LocalDateTime ldt;
+
+    public DateTimeStamp(LocalDateTime ldt) {
+        this.ldt = ldt;
+    }
+
+
+    public String getLocalDateTime() {
+        return ldt.toString();
     }
 }
