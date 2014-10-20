@@ -10,7 +10,7 @@ public class Console {
         this.twitter = twitter;
     }
 
-    public void print(List<Object> post) {
+    public void print(List<Post> post) {
 
     }
 

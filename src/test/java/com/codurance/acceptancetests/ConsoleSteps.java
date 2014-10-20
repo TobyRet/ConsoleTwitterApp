@@ -1,12 +1,8 @@
 package com.codurance.acceptancetests;
 
-import com.codurance.*;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ConsoleSteps {
@@ -31,10 +27,10 @@ public class ConsoleSteps {
 
     @Then("^I should see \"(.*?)\"$")
     public void i_should_see(String arg1) throws Throwable {
-        Twitter twitter = new Twitter(null);
-        Console console = new Console(twitter);
-        List<Object> posts = new ArrayList();
-        console.print(posts);
+//        Twitter twitter = new Twitter(null);
+//        Console console = new Console(twitter);
+//        List<Object> posts = new ArrayList();
+//        console.print(posts);
     }
 
 }

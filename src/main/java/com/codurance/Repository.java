@@ -11,7 +11,13 @@ public class Repository {
         posts.add(post);
     }
 
-    public List<Post> getPosts() {
-        return posts;
+    public List<Post> getPostsFor(String user) {
+        List<Post> userPosts = new ArrayList<>();
+        for(Post post : posts) {
+            if(post.getUser() == user) {
+                userPosts.add(post);
+            }
+        }
+        return userPosts;
     }
 }
