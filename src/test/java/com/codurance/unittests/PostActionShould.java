@@ -1,5 +1,6 @@
 package com.codurance.unittests;
 
+import com.codurance.DateTimeStamp;
 import com.codurance.Post;
 import com.codurance.PostAction;
 import com.codurance.Repository;
@@ -39,15 +40,12 @@ public class PostActionShould {
     add_post_to_user_account() {
         ArgumentCaptor<Post> argument = ArgumentCaptor.forClass(Post.class);
 
-//        DateTimeStamp dateTimeStamp = mock(DateTimeStamp.class);
-//        when(dateTimeStamp.getLocalDateTime()).thenReturn("2014-10-19T08:30");
-
         postAction.execute(VALID_REQUEST);
 
         verify(repository).add(argument.capture());
         assertThat(argument.getValue(), instanceOf(Post.class));
         assertEquals("Alice", argument.getValue().getUser());
         assertEquals("Does anyone like beer?", argument.getValue().getMessage());
-        //assertEquals("2014-10-19T08:30", argument.getValue().getDateTimeStamp());
+        assertThat(argument.getValue().getDateTimeStamp(), instanceOf(DateTimeStamp.class));
     }
 }

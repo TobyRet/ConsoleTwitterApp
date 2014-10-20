@@ -12,14 +12,10 @@ public class PostAction implements Actions {
 
     public void execute(String userInput) {
         if (userInput.contains("->")) {
-            String dts = new DateTimeStamp(now()).getLocalDateTime();
+            DateTimeStamp dts = new DateTimeStamp(now());
             Post post = new Post(getUser(userInput), getMessage(userInput), dts);
             repository.add(post);
         }
-    }
-
-    private String createDateTimeStamp() {
-        return new DateTimeStamp(now()).getLocalDateTime();
     }
 
     private String getMessage(String userInput) {

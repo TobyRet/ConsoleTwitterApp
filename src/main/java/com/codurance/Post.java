@@ -3,9 +3,9 @@ package com.codurance;
 public class Post {
     private final String message;
     private final String user;
-    private String dateTimeStamp;
+    private DateTimeStamp dateTimeStamp;
 
-    public Post(String user, String message, String dateTimeStamp) {
+    public Post(String user, String message, DateTimeStamp dateTimeStamp) {
         this.user = user;
         this.message = message;
         this.dateTimeStamp = dateTimeStamp;
@@ -19,7 +19,7 @@ public class Post {
         return message;
     }
 
-    public String getDateTimeStamp() {
+    public DateTimeStamp getDateTimeStamp() {
         return dateTimeStamp;
     }
 }

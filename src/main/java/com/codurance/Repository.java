@@ -1,11 +1,17 @@
 package com.codurance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Repository {
-    public User findOrCreate(String userName) {
-        return null;
-    };
+
+    private List<Post> posts = new ArrayList<>();
 
     public void add(Post post) {
+        posts.add(post);
+    }
 
+    public List<Post> getPosts() {
+        return posts;
     }
 }

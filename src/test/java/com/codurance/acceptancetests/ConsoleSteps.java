@@ -19,14 +19,14 @@ public class ConsoleSteps {
     @When("^I post my message$")
     public void i_post_my_message() throws Throwable {
         String message = "Does anyone like beer?";
-        PostAction post = new PostAction(new Repository());
-        post.execute(message);
+       // PostAction post = new PostAction();
+        //post.execute(message);
     }
 
     @When("^view my timeline$")
     public void view_my_timeline() throws Throwable {
-        Timeline timeline = new Timeline();
-        timeline.execute();
+//        Timeline timeline = new Timeline();
+//        timeline.execute();
     }
 
     @Then("^I should see \"(.*?)\"$")
