@@ -1,9 +1,4 @@
-package com.codurance.unittests;
-
-import com.codurance.Actions;
-import com.codurance.Console;
-import com.codurance.Post;
-import com.codurance.Repository;
+package com.codurance;
 
 import java.util.List;
 
@@ -19,11 +14,11 @@ public class WallAction implements Actions {
     @Override
     public void execute(String userInput) {
         if(userInput.split(" ").length == 1) {
-            console.print(getUserPosts(userInput));
+            getPostsFromRepository(userInput).forEach(console::print);
         }
     }
 
-    private List<Post> getUserPosts(String userInput) {
+    private List<String> getPostsFromRepository(String userInput) {
         return repository.getPostsFor(userInput);
     }
 }
