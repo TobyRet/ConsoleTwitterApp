@@ -31,7 +31,7 @@ public class PostFormatterShould {
     @Test public void
     format_a_post_ready_for_printing() {
         Post post1 = new Post("Alice", "I like beer", dateTime1);
-        Post post2 = new Post("Alice", "I like really really like beer", dateTime2);
+        Post post2 = new Post("Alice", "I really really like beer", dateTime2);
 
         given(dateTime1.getTimeDifference()).willReturn("3");
         given(dateTime2.getTimeDifference()).willReturn("4");
@@ -40,6 +40,6 @@ public class PostFormatterShould {
         repository.add(post2);
 
         assertThat(postFormatter.getPostsFor("Alice").get(0), is("Alice - I like beer (3 minutes ago)"));
-        assertThat(postFormatter.getPostsFor("Alice").get(1), is("Alice - I like beer (4 minutes ago)"));
+        assertThat(postFormatter.getPostsFor("Alice").get(1), is("Alice - I really really like beer (4 minutes ago)"));
     }
 }

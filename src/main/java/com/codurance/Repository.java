@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Repository {
 
-    private static List<Post> posts = new ArrayList<>();
+    private List<Post> posts = new ArrayList<>();
 
     public void add(Post post) {
         posts.add(post);
