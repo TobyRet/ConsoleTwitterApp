@@ -14,4 +14,8 @@ public class Repository {
     public List<Post> allPosts() {
         return posts;
     }
+
+    public void follow(String user) {
+
+    }
 }

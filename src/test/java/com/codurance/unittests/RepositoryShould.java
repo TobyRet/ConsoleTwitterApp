@@ -21,7 +21,7 @@ public class RepositoryShould {
         repository.add(alicePost);
         repository.add(fredPost);
         repository.add(ottoPost);
-        
+
         assertThat(repository.allPosts().size(), is(3));
     }
 }

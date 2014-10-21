@@ -30,7 +30,7 @@ public class PostActionShould {
 
     @Test
     public void
-    do_not_execute_if_command_is_not_valid() {
+    not_execute_if_command_is_not_valid() {
         postAction.execute(INVALID_REQUEST);
         verify(repository, never()).add(any());
     }
