@@ -12,10 +12,10 @@ public class PostFormatter {
     }
 
     public List<String> getPostsFor(String user) {
-        List<String> userPosts = new ArrayList<>();
+        List<String> userPosts = new ArrayList();
         for(Post post : repository.allPosts()) {
             if(post.getUser() == user) {
-                userPosts.add(post.getUser() + " - " + post.getMessage());
+                userPosts.add(post.getUser() + " - " + post.getMessage() + " " + "(" + post.getDateTimeStamp().getTimeDifference() + " minutes ago)");
             }
         }
         return userPosts;

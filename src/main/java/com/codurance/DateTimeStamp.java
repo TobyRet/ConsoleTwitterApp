@@ -1,6 +1,7 @@
 package com.codurance;
 
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 public class DateTimeStamp {
     private final LocalDateTime ldt;
@@ -9,8 +10,12 @@ public class DateTimeStamp {
         this.ldt = ldt;
     }
 
+    public LocalDateTime getLocalDateTime() {
+        return ldt;
+    }
 
-    public String getLocalDateTime() {
-        return ldt.toString();
+    public String getTimeDifference() {
+        long difference = LocalDateTime.from(ldt).until(LocalDateTime.now(), ChronoUnit.MINUTES);
+        return String.valueOf(difference);
     }
 }
