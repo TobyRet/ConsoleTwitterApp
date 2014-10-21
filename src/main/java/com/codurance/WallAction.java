@@ -3,11 +3,11 @@ package com.codurance;
 import java.util.List;
 
 public class WallAction implements Actions {
-    private final Repository repository;
+    private final PostFormatter postFormatter;
     private final Console console;
 
-    public WallAction(Repository repository, Console console) {
-        this.repository = repository;
+    public WallAction(PostFormatter postFormatter, Console console) {
+        this.postFormatter = postFormatter;
         this.console = console;
     }
 
@@ -19,6 +19,6 @@ public class WallAction implements Actions {
     }
 
     private List<String> getPostsFromRepository(String userInput) {
-        return repository.getPostsFor(userInput);
+        return postFormatter.getPostsFor(userInput);
     }
 }
