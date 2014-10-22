@@ -20,4 +20,8 @@ public class PostFormatter {
         }
         return userPosts;
     }
+
+    public List<String> getWallPostsFor(String user) {
+        return null;
+    }
 }

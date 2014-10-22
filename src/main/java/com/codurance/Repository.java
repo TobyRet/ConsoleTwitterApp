@@ -9,7 +9,6 @@ public class Repository {
 
     private List<Post> posts = new ArrayList<>();
     private Map<String, List<String>> followRelationships = new HashMap<>();
-    private boolean existingRelationShipExists = false;
 
     public void add(Post post) {
         posts.add(post);
@@ -22,7 +21,6 @@ public class Repository {
     public void createRelationship(String follower, String followee) {
         editExistingRelationship(follower, followee);
         createNewRelationshipIfNoneExists(follower, followee);
-
     }
 
     private void createNewRelationshipIfNoneExists(String follower, String followee) {
