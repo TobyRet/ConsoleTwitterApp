@@ -2,11 +2,11 @@ package com.codurance;
 
 import java.util.List;
 
-public class WallAction implements Actions {
+public class ReadAction implements Actions {
     private final PostFormatter postFormatter;
     private final Console console;
 
-    public WallAction(PostFormatter postFormatter, Console console) {
+    public ReadAction(PostFormatter postFormatter, Console console) {
         this.postFormatter = postFormatter;
         this.console = console;
     }

@@ -2,7 +2,7 @@ package com.codurance.unittests;
 
 import com.codurance.Console;
 import com.codurance.PostFormatter;
-import com.codurance.WallAction;
+import com.codurance.ReadAction;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Matchers;
@@ -12,24 +12,24 @@ import java.util.List;
 
 import static org.mockito.Mockito.*;
 
-public class WallActionShould {
+public class ReadActionShould {
 
     private static final String INVALID_REQUEST = "Alice -> I like beer";
     private static final String VALID_REQUEST = "Alice";
     private PostFormatter postFormatter;
-    private WallAction wallAction;
+    private ReadAction readAction;
     private Console console;
 
     @Before
     public void initialise() {
         postFormatter = mock(PostFormatter.class);
         console = mock(Console.class);
-        wallAction = new WallAction(postFormatter, console);
+        readAction = new ReadAction(postFormatter, console);
     }
 
     @Test public void
     not_execute_if_command_is_invalid() {
-        wallAction.execute(INVALID_REQUEST);
+        readAction.execute(INVALID_REQUEST);
 
         verify(postFormatter, never()).getPostsFor(any());
     }
@@ -42,7 +42,7 @@ public class WallActionShould {
 
         when(postFormatter.getPostsFor(Matchers.eq("Alice"))).thenReturn(alicePosts);
 
-        wallAction.execute(VALID_REQUEST);
+        readAction.execute(VALID_REQUEST);
 
         verify(console).print("Alice - I like beer (2 minutes ago)");
         verify(console).print("Alice - I like pancakes (3 minutes ago)");
