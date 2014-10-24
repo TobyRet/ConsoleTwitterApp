@@ -24,6 +24,10 @@ public class Repository {
         return posts;
     }
 
+    public List<Post> getPostsFor(String userInput) {
+        return null;
+    }
+
 //    public void createRelationship(String follower, String followee) {
 //        editExistingRelationship(follower, followee);
 //        createNewRelationshipIfNoneExists(follower, followee);
