@@ -1,4 +1,10 @@
 package com.codurance;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 //
 //import java.util.ArrayList;
 //import java.util.HashMap;
@@ -6,18 +12,18 @@ package com.codurance;
 //import java.util.Map;
 //
 public class Repository {
-//
-//    private List<Post> posts = new ArrayList<>();
-//    private Map<String, List<String>> followRelationships = new HashMap<>();
-//
-//    public void add(Post post) {
-//        posts.add(post);
-//    }
-//
-//    public List<Post> allPosts() {
-//        return posts;
-//    }
-//
+
+    private List<Post> posts = new ArrayList<>();
+    private Map<String, List<String>> followRelationships = new HashMap<>();
+
+    public void add(Post post) {
+        posts.add(post);
+    }
+
+    public List<Post> allPosts() {
+        return posts;
+    }
+
 //    public void createRelationship(String follower, String followee) {
 //        editExistingRelationship(follower, followee);
 //        createNewRelationshipIfNoneExists(follower, followee);

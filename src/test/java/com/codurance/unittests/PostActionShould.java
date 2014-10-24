@@ -1,51 +1,45 @@
-//package com.codurance.unittests;
-//
-//import com.codurance.Clock;
-//import com.codurance.Post;
-//import com.codurance.PostAction;
-//import com.codurance.Repository;
-//import org.junit.Before;
-//import org.junit.Test;
-//import org.mockito.ArgumentCaptor;
-//
-//import static org.hamcrest.CoreMatchers.instanceOf;
-//import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.assertThat;
-//import static org.mockito.Matchers.any;
-//import static org.mockito.Mockito.*;
-//
-//public class PostActionShould {
-//
-//    private static final String VALID_REQUEST = "Alice -> Does anyone like beer?";
-//    private static final String INVALID_REQUEST = "Alice";
-//    private PostAction postAction;
-//    private Repository repository;
-//
-//    @Before
-//    public void
-//    initialise() {
-//        repository = mock(Repository.class);
-//        postAction = new PostAction(repository);
-//    }
-//
-//    @Test
-//    public void
-//    not_execute_if_command_is_not_valid() {
-//        postAction.execute(INVALID_REQUEST, this);
-//        verify(repository, never()).add(any());
-//    }
-//
-//    @Test
-//    public void
-//    add_post_to_user_account() {
-//        ArgumentCaptor<Post> argument = ArgumentCaptor.forClass(Post.class);
-//
-//        postAction.execute(VALID_REQUEST, this);
-//
-//        verify(repository).add(argument.capture());
-//        assertThat(argument.getValue(), instanceOf(Post.class));
-//        assertEquals("Alice", argument.getValue().getUser());
-//        assertEquals("Does anyone like beer?", argument.getValue().getMessage());
-//        assertThat(argument.getValue().getDateTimeStamp(), instanceOf(Clock.class));
-//    }
-//}
+package com.codurance.unittests;
+
+import com.codurance.Post;
+import com.codurance.PostAction;
+import com.codurance.PostDisplay;
+import com.codurance.Repository;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Matchers;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+
+@RunWith(MockitoJUnitRunner.class)
+public class PostActionShould {
+
+    private static final String VALID_REQUEST = "Alice -> Does anyone like beer?";
+    private static final String INVALID_REQUEST = "Alice";
+    private PostAction postAction;
+    @Mock Repository repository;
+    private PostDisplay postDisplay = new PostDisplay();
+
+    @Before
+    public void initialise() {
+        postAction = new PostAction();
+    }
+
+    @Test
+    public void
+    not_execute_if_command_is_not_valid() {
+        postAction.execute(INVALID_REQUEST, postDisplay, repository);
+        verify(repository, never()).add(any());
+    }
+
+    @Test
+    public void
+    add_post_to_user_account() {
+        postAction.execute(VALID_REQUEST, postDisplay, repository);
+        verify(repository).add(Matchers.any(Post.class));
+    }
+}
