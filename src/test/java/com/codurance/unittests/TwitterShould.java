@@ -1,9 +1,12 @@
 package com.codurance.unittests;
 
 import com.codurance.Actions;
+import com.codurance.PostDisplay;
+import com.codurance.Repository;
 import com.codurance.Twitter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Matchers;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
@@ -19,6 +22,6 @@ public class TwitterShould {
         Twitter twitter = new Twitter(actions);
         String userInput = "Alice -> does anyone like beer?";
         twitter.handleUserRequest(userInput);
-        verify(actions).execute(userInput);
+        verify(actions).execute(Matchers.any(String.class), Matchers.any(PostDisplay.class), Matchers.any(Repository.class));
     }
 }
