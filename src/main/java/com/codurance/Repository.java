@@ -25,11 +25,11 @@ public class Repository {
         return userPosts;
     }
 
-//    public void createRelationship(String follower, String followee) {
+    public void createRelationship(String follower, String followee) {
 //        editExistingRelationship(follower, followee);
 //        createNewRelationshipIfNoneExists(follower, followee);
-//    }
-//
+    }
+
 //    private void createNewRelationshipIfNoneExists(String follower, String followee) {
 //        if(followRelationships.containsKey(follower) == false) {
 //            followRelationships.put(follower, new ArrayList());
