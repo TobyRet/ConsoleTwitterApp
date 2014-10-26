@@ -6,6 +6,9 @@ import com.codurance.Repository;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.hasKey;
+import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
+import static org.hamcrest.collection.IsMapContaining.hasValue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -17,6 +20,7 @@ public class RepositoryShould {
     public void initialise() {
         repository = new Repository();
     }
+
     @Test public void
     return_a_users_posts() {
         Post alicePost1 = new Post("Alice", "Blah", new Clock());
@@ -32,18 +36,18 @@ public class RepositoryShould {
         assertThat(repository.getPostsFor("Alice").get(1).getUser(), is("Alice"));
     }
 
-//    @Test public void
-//    create_new_follow_relationship() {
-//        repository.createRelationship("Alice", "Bob");
-//        assertThat(repository.getRelationships(), hasKey(String.valueOf("Alice")));
-//        assertThat(repository.getRelationships(), hasValue(contains(String.valueOf("Bob"))));
-//    }
-//
-//    @Test public void
-//    edit_existing_relationship() {
-//        repository.createRelationship("Alice", "Bob");
-//        repository.createRelationship("Alice", "Toby");
-//        assertThat(repository.getRelationships(), hasKey(String.valueOf("Alice")));
-//        assertThat(repository.getRelationships(), hasValue(contains(String.valueOf("Bob"),String.valueOf( "Toby"))));
-//    }
+    @Test public void
+    create_new_follow_relationship() {
+        repository.createRelationship("Alice", "Bob");
+        assertThat(repository.getRelationships(), hasKey(String.valueOf("Alice")));
+        assertThat(repository.getRelationships(), hasValue(contains(String.valueOf("Bob"))));
+    }
+
+    @Test public void
+    edit_existing_relationship() {
+        repository.createRelationship("Alice", "Bob");
+        repository.createRelationship("Alice", "Toby");
+        assertThat(repository.getRelationships(), hasKey(String.valueOf("Alice")));
+        assertThat(repository.getRelationships(), hasValue(contains(String.valueOf("Bob"),String.valueOf( "Toby"))));
+    }
 }

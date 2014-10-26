@@ -18,7 +18,6 @@ public class ReadActionShould {
     private ReadAction readAction;
     @Mock PostDisplay postDisplay;
     private Repository repository;
-    //@Mock Repository repository;
 
     @Before
     public void initialise() {
