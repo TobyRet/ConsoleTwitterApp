@@ -1,9 +1,6 @@
 package com.codurance;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -15,10 +12,6 @@ public class Repository {
     public void add(Post post) {
         posts.add(post);
     }
-
-//    public List<Post> allPosts() {
-//        return posts;
-//    }
 
     public List<Post> getPostsFor(String userName) {
         List<Post> userPosts = posts.stream().
@@ -45,39 +38,24 @@ public class Repository {
         }
     }
 
-
     public Map<String, List<String>> getRelationships() {
         return followRelationships;
     }
 
-    public List<Post> getWallPostsFor(String userInput) {
-        return null;
+    public List<Post> getWallPostsFor(String targetUser) {
+        List<Post> wallPosts = new ArrayList<>();
+        List<String> targetUsers = getFriendsFor(targetUser);
+
+        targetUsers.stream().forEach(user -> wallPosts.addAll(getPostsFor(user)));
+        return wallPosts.stream().sorted().collect(Collectors.toList());
     }
 
-//    public List<Post> getPostsFor(String user) {
-//        return null;
-//    }
-//
-//    public List<Post> getWallPostsFor(String user) {
-//        return null;
-//    }
-//
-//    //        List<String> formattedWallPosts = new ArrayList();
-////        List<String> targetUsers = getTargetUsers(user);
-////        targetUsers.stream().forEach(user1 -> wallPosts.addAll(repository.postsFor(user1)));
-//    // return wallPosts.stream().sorted().collect(Collectors.toList());
-//
-//    //
-////    private List<String> getTargetUsers(String user) {
-////        List<String> targetUsers = new ArrayList<>();
-////        for(Map.Entry<String, List<String>> followRelationship : repository.getRelationships().entrySet()) {
-////            if(followRelationship.getKey() == user) {
-////                targetUsers.add(user);
-////                for(String followee : followRelationship.getValue()) {
-////                    targetUsers.add(followee);
-////                };
-////            }
-////        }
-////        return targetUsers;
-////    }
+    private List<String> getFriendsFor(String targetUser) {
+        List<String> targetUsers = new ArrayList<>();
+        getRelationships().entrySet().stream().filter(friendsGroup -> friendsGroup.getKey() == targetUser).forEach(friendsGroup -> {
+            targetUsers.add(targetUser);
+            targetUsers.addAll(friendsGroup.getValue().stream().collect(Collectors.toList()));
+        });
+        return targetUsers;
+    }
 }
