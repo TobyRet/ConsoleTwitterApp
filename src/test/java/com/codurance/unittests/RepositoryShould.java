@@ -6,6 +6,8 @@ import com.codurance.Repository;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.LocalDateTime;
+
 import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.hamcrest.collection.IsMapContaining.hasValue;
@@ -57,10 +59,10 @@ public class RepositoryShould {
     }
 
     private void createDummyPosts() throws InterruptedException {
-        Post alicePost1 = new Post("Alice", "Alice message", new Clock());
-        Post tobyPost = new Post("Toby", "Toby message", new Clock());
+        Post alicePost1 = new Post("Alice", "Alice message", new Clock(LocalDateTime.now()));
+        Post tobyPost = new Post("Toby", "Toby message", new Clock(LocalDateTime.now()));
         Thread.sleep(1);
-        Post alicePost2 = new Post("Alice", "Another Alice message", new Clock());
+        Post alicePost2 = new Post("Alice", "Another Alice message", new Clock(LocalDateTime.now()));
 
         repository.add(alicePost1);
         repository.add(alicePost2);

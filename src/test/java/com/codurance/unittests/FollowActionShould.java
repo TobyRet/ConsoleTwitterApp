@@ -10,6 +10,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import java.time.LocalDateTime;
+
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
@@ -20,7 +22,7 @@ public class FollowActionShould {
     private static final String VALID_INPUT = "Alice follow Bob";
     private FollowAction followAction;
     @Mock Repository repository;
-    private PostDisplay postDisplay = new PostDisplay(new Clock());
+    private PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
 
     @Before
     public void initialise() {

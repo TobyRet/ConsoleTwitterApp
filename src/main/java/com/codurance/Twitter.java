@@ -1,5 +1,7 @@
 package com.codurance;
 
+import java.time.LocalDateTime;
+
 public class Twitter {
     private final Repository repository;
     private final PostDisplay postDisplay;
@@ -8,7 +10,7 @@ public class Twitter {
     public Twitter(Actions actions, Console console) {
         this.actions = actions;
         this.repository = new Repository();
-        this.postDisplay = new PostDisplay(new Clock());
+        this.postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
     }
 
     public void handleUserRequest(String userInput) {

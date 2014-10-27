@@ -21,6 +21,6 @@ public class PostDisplay {
     }
 
     private String getTimeDifference(Post post) {
-        return clock.getTimeDifference(post.getDateTimeStamp());
+        return clock.getTimeDifference(post.getPostCreationDateTime());
     }
 }

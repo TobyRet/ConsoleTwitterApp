@@ -4,10 +4,15 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
 public class Clock {
-    private LocalDateTime ldt;
+
+    private final LocalDateTime localDateTime;
+
+    public Clock(LocalDateTime localDateTime) {
+        this.localDateTime = localDateTime;
+    }
 
     public LocalDateTime getLocalDateTime() {
-        return ldt = LocalDateTime.now();
+        return localDateTime;
     }
 
     public String getTimeDifference(LocalDateTime postDateTime) {
