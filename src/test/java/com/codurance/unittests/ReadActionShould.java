@@ -29,7 +29,7 @@ public class ReadActionShould {
     not_execute_if_command_is_invalid() {
         readAction.execute(INVALID_REQUEST, postDisplay, repository);
 
-        verify(postDisplay, never()).print(any());
+        verify(postDisplay, never()).displayAll(any(), any());
     }
 
     @Test public void
@@ -39,6 +39,6 @@ public class ReadActionShould {
         postAction.execute("Alice -> I like lots of beer", postDisplay, repository);
         readAction.execute(VALID_REQUEST, postDisplay, repository);
 
-        verify(postDisplay).print(Matchers.anyListOf(Post.class));
+        verify(postDisplay).displayAll(Matchers.anyListOf(Post.class), any());
     }
 }

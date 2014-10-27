@@ -1,5 +1,6 @@
 package com.codurance.unittests;
 
+import com.codurance.Clock;
 import com.codurance.FollowAction;
 import com.codurance.PostDisplay;
 import com.codurance.Repository;
@@ -19,7 +20,7 @@ public class FollowActionShould {
     private static final String VALID_INPUT = "Alice follow Bob";
     private FollowAction followAction;
     @Mock Repository repository;
-    private PostDisplay postDisplay = new PostDisplay();
+    private PostDisplay postDisplay = new PostDisplay(new Clock());
 
     @Before
     public void initialise() {

@@ -11,7 +11,7 @@ public class Clock {
     }
 
     public String getTimeDifference(LocalDateTime postDateTime) {
-        long difference = LocalDateTime.from(postDateTime).until(LocalDateTime.now(), ChronoUnit.MINUTES);
+        long difference = LocalDateTime.from(postDateTime).until(getLocalDateTime(), ChronoUnit.MINUTES);
         return String.valueOf(difference);
     }
 }

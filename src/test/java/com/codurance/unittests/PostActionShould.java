@@ -1,9 +1,6 @@
 package com.codurance.unittests;
 
-import com.codurance.Post;
-import com.codurance.PostAction;
-import com.codurance.PostDisplay;
-import com.codurance.Repository;
+import com.codurance.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +19,7 @@ public class PostActionShould {
     private static final String INVALID_REQUEST = "Alice";
     private PostAction postAction;
     @Mock Repository repository;
-    private PostDisplay postDisplay = new PostDisplay();
+    private PostDisplay postDisplay = new PostDisplay(new Clock());
 
     @Before
     public void initialise() {

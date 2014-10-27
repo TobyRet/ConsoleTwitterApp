@@ -5,10 +5,10 @@ public class Twitter {
     private final PostDisplay postDisplay;
     private Actions actions;
 
-    public Twitter(Actions actions) {
+    public Twitter(Actions actions, Console console) {
         this.actions = actions;
         this.repository = new Repository();
-        this.postDisplay = new PostDisplay();
+        this.postDisplay = new PostDisplay(new Clock());
     }
 
     public void handleUserRequest(String userInput) {

@@ -32,12 +32,12 @@ public class WallActionShould {
     @Test public void
     not_execute_if_command_is_invalid() {
         wallAction.execute(INVALID_INPUT, postDisplay, repository);
-        verify(postDisplay, never()).print(any());
+        verify(postDisplay, never()).displayAll(any(), any());
     }
 
     @Test public void
     send_users_wall_posts_to_PostDisplay_for_printing() {
         wallAction.execute(VALID_REQUEST, postDisplay, repository);
-        verify(postDisplay).print(Matchers.anyListOf(Post.class));
+        verify(postDisplay).displayAll(Matchers.anyListOf(Post.class), any());
     }
 }

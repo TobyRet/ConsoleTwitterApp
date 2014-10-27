@@ -30,7 +30,7 @@ public class ConsoleSteps {
 //        Twitter twitter = new Twitter(null);
 //        Console console = new Console(twitter);
 //        List<Object> posts = new ArrayList();
-//        console.print(posts);
+//        console.displayAll(posts);
     }
 
 }

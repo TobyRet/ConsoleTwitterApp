@@ -5,12 +5,12 @@ import java.time.LocalDateTime;
 public class Post implements Comparable<Post> {
     private final String message;
     private final String user;
-    private LocalDateTime dateTime;
+    private final LocalDateTime localDateTime;
 
-    public Post(String user, String message, Clock dateTimeStamp) {
+    public Post(String user, String message, Clock clock) {
         this.user = user;
         this.message = message;
-        this.dateTime = dateTimeStamp.getLocalDateTime();
+        this.localDateTime = clock.getLocalDateTime();
     }
 
     public String getUser() {
@@ -22,11 +22,11 @@ public class Post implements Comparable<Post> {
     }
 
     public LocalDateTime getDateTimeStamp() {
-        return dateTime;
+        return localDateTime;
     }
 
     @Override
     public int compareTo(Post anotherPost) {
-        return this.dateTime.compareTo(anotherPost.getDateTimeStamp());
+        return this.localDateTime.compareTo(anotherPost.localDateTime);
     }
 }

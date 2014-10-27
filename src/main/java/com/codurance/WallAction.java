@@ -5,7 +5,7 @@ public class WallAction implements Actions {
     @Override
     public void execute(String userInput, PostDisplay postDisplay, Repository repository) {
         if(commandValid(userInput)) {
-            postDisplay.print(repository.getWallPostsFor(userInput));
+            postDisplay.displayAll(repository.getWallPostsFor(userInput), new Console());
         }
     }
 
