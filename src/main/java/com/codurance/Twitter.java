@@ -1,19 +1,24 @@
 package com.codurance;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 
 public class Twitter {
-    private final Repository repository;
-    private final PostDisplay postDisplay;
-    private Actions actions;
+    private final Repository repository = new Repository();
+    private final PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
+    private final Console console;
+    private ActionList actionList;
 
-    public Twitter(Actions actions, Console console) {
-        this.actions = actions;
-        this.repository = new Repository();
-        this.postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
+    public Twitter(ActionList actionList, Console console) {
+        this.actionList = actionList;
+        this.console = console;
     }
 
-    public void handleUserRequest(String userInput) {
-        actions.execute(userInput, postDisplay, repository);
+    public void getConsoleInput() throws IOException {
+        handleUserRequest(console.getUserCommand());
+    }
+
+    private void handleUserRequest(String userCommand) throws IOException {
+        actionList.execute(userCommand, postDisplay, repository);
     }
 }

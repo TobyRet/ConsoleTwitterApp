@@ -4,7 +4,7 @@ public class FollowAction implements Actions {
 
     @Override
     public void execute(String userInput, PostDisplay postDisplay, Repository repository) {
-        if (userInput.contains("follow")) {
+        if (userInput.contains("follows")) {
             follow(userInput, repository);
         }
     }
@@ -14,10 +14,10 @@ public class FollowAction implements Actions {
     }
 
     private String getFollowee(String userInput) {
-        return userInput.split(" follow ")[1];
+        return userInput.split(" ")[2];
     }
 
     private String getFollower(String userInput) {
-        return userInput.split(" follow ")[0];
+        return userInput.split(" ")[0];
     }
 }

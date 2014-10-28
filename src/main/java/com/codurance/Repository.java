@@ -14,9 +14,7 @@ public class Repository {
     }
 
     public List<Post> getPostsFor(String userName) {
-        List<Post> userPosts = posts.stream().
-                                filter(post -> post.getUser() == userName).
-                                collect(Collectors.toList());
+        List<Post> userPosts = posts.stream().filter(post -> post.getUser().equals(userName)).collect(Collectors.toList());
         return userPosts;
     }
 
@@ -26,7 +24,7 @@ public class Repository {
     }
 
     private void editExistingRelationship(String follower, String followee) {
-        followRelationships.entrySet().stream().filter(followRelationship -> followRelationship.getKey() == follower).forEach(followRelationship -> {
+        followRelationships.entrySet().stream().filter(followRelationship -> followRelationship.getKey().equals(follower)).forEach(followRelationship -> {
             followRelationship.getValue().add(followee);
         });
     }
@@ -52,9 +50,11 @@ public class Repository {
 
     private List<String> getFriendsFor(String targetUser) {
         List<String> targetUsers = new ArrayList<>();
-        getRelationships().entrySet().stream().filter(friendsGroup -> friendsGroup.getKey() == targetUser).forEach(friendsGroup -> {
-            targetUsers.add(targetUser);
-            targetUsers.addAll(friendsGroup.getValue().stream().collect(Collectors.toList()));
+
+        getRelationships().keySet().stream().filter(key -> key.equals(targetUser)).forEach(key -> {
+            targetUsers.add(key);
+            targetUsers.addAll(getRelationships().get(key).stream().collect(Collectors.toList()));
+            ;
         });
         return targetUsers;
     }

@@ -3,27 +3,34 @@ package com.codurance.unittests;
 import com.codurance.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Matchers;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import java.io.IOException;
+
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TwitterShould {
 
-    @Mock Actions actions;
     @Mock Console console;
+    @Mock ReadAction readAction;
+    @Mock WallAction wallAction;
+    @Mock PostAction postAction;
+    @Mock FollowAction followAction;
+    @Mock ActionList actionList;
 
     @Test public void
-    read_user_input_from_console_and_direct_request() {
-        Twitter twitter = new Twitter(actions, console);
+    read_user_input_from_console_and_direct_request() throws IOException {
+        Twitter twitter = new Twitter(actionList, console);
         String userCommand = "Alice -> does anyone like beer?";
 
         given(console.getUserCommand()).willReturn(userCommand);
 
-        twitter.handleUserRequest(console.getUserCommand());
-        verify(actions).execute(Matchers.any(String.class), Matchers.any(PostDisplay.class), Matchers.any(Repository.class));
+        twitter.getConsoleInput();
+        verify(actionList).execute(any(), any(), any());
     }
 }
+

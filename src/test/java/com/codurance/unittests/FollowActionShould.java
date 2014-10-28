@@ -19,7 +19,7 @@ import static org.mockito.Mockito.verify;
 public class FollowActionShould {
 
     private static final String INVALID_INPUT = "Alice";
-    private static final String VALID_INPUT = "Alice follow Bob";
+    private static final String VALID_INPUT = "Alice follows Bob";
     private FollowAction followAction;
     @Mock Repository repository;
     private PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
