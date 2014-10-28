@@ -32,9 +32,12 @@ Bob - Damn! We lost! (2 minutes ago)
 Alice - I love the weather today (5 minutes ago)
 
 ###Details
-Application must use the console for input and output
-Users submit commands to the application. There are four commands. “posting”, “reading”, etc. are not part of the commands; commands always start with the user’s name.
-posting: <user name> -> <message>
-reading: <user name>
-following: <user name> follows <another user>
-wall: <user name> wall
+1. Application must use the console for input and output
+2. Users submit commands to the application. There are four commands. “posting”, “reading”, etc. are not part of the commands; commands always start with the user’s name.
+3. posting: <user name> -> <message>
+4. reading: <user name>
+5. following: <user name> follows <another user>
+6. wall: <user name> wall
+
+### Further Improvements Required
+The application works only when input into the console is correct. I.e. Any mistakes made by the user will cause an error. Validation tests and helpful error messages should be added to fix this.

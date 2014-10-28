@@ -17,7 +17,7 @@ public class PostDisplay {
     }
 
     private String format(Post post) {
-       return post.getUser() + " - " + post.getMessage() + " " + "(" + getTimeDifference(post) + " minutes ago)";
+       return post.getUser() + " - " + post.getMessage() + " " + "(" + getTimeDifference(post) + ")";
     }
 
     private String getTimeDifference(Post post) {

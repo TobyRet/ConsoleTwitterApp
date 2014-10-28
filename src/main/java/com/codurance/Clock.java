@@ -16,7 +16,22 @@ public class Clock {
     }
 
     public String getTimeDifference(LocalDateTime postDateTime) {
-        long difference = LocalDateTime.from(postDateTime).until(getLocalDateTime(), ChronoUnit.MINUTES);
-        return String.valueOf(difference);
+        long difference = LocalDateTime.from(postDateTime).until(getLocalDateTime(), ChronoUnit.SECONDS);
+
+        String formattedTimeDifference = "";
+
+        if((int) difference < 60) {
+            formattedTimeDifference = String.valueOf(difference) + " seconds ago";
+        }
+
+        if((int) difference == 60) {
+            formattedTimeDifference = String.valueOf(difference / 60) + " minute ago";
+        }
+
+        if((int) difference > 60) {
+            formattedTimeDifference = String.valueOf(difference / 60) + " minutes ago";
+        }
+
+        return formattedTimeDifference;
     }
 }

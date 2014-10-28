@@ -25,8 +25,8 @@ public class PostDisplayShould {
     format_posts_for_printing() {
         PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.of(2014, 10, 10, 10, 18, 00)));
 
-        Post post_1 = new Post("Alice", "I like beer", new Clock(LocalDateTime.of(2014, 10, 10, 10, 12, 00)));
-        Post post_2 = new Post("Alice", "I like cake", new Clock(LocalDateTime.of(2014, 10, 10, 10, 14, 00)));
+        Post post_1 = new Post("Alice", "I like beer", new Clock(LocalDateTime.of(2014, 10, 10, 10, 17, 50)));
+        Post post_2 = new Post("Alice", "I like cake", new Clock(LocalDateTime.of(2014, 10, 10, 10, 17, 00)));
         Post post_3 = new Post("Alice", "I want more beer", new Clock(LocalDateTime.of(2014, 10, 10, 10, 16, 00)));
 
         List<Post> alicePosts = new ArrayList();
@@ -35,8 +35,8 @@ public class PostDisplayShould {
         alicePosts.add(post_3);
 
         postDisplay.displayAll(alicePosts, console);
-        verify(console).print("Alice - I like beer (6 minutes ago)");
-        verify(console).print("Alice - I like cake (4 minutes ago)");
+        verify(console).print("Alice - I like beer (10 seconds ago)");
+        verify(console).print("Alice - I like cake (1 minute ago)");
         verify(console).print("Alice - I want more beer (2 minutes ago)");
     }
 }
