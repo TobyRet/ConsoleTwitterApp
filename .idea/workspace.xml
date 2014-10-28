@@ -22,18 +22,48 @@
     <favorites_list name="ConsoleTwitterApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ActionList.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6754967" vertical-offset="0" max-vertical-offset="755">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="PostDisplay.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ActionListShould.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.615894" vertical-offset="0" max-vertical-offset="755">
+                  <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ActionList.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.7350993" vertical-offset="0" max-vertical-offset="755">
+                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -43,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/RunCucumberTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/Timeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionInterface.java" />
@@ -94,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ReadAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/PostAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java" />
       </list>
     </option>
   </component>
@@ -312,7 +342,7 @@
       <recent name="com.codurance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="JUnit.com.codurance.unittests in ConsoleTwitterApp">
     <configuration default="false" name="com.codurance.unittests in ConsoleTwitterApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ConsoleTwitterApp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -357,28 +387,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PostDisplayShould (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ConsoleTwitterApp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.codurance.unittests" />
-      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.PostDisplayShould" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codurance.Launcher" />
       <option name="VM_PARAMETERS" />
@@ -401,6 +409,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.codurance.unittests" />
       <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.WallActionShould" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ActionListShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConsoleTwitterApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.codurance.unittests" />
+      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.ActionListShould" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -549,17 +579,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.com.codurance.unittests in ConsoleTwitterApp" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TwitterShould" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PostDisplayShould (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Launcher" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Launcher" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Launcher" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TwitterShould" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.com.codurance.unittests in ConsoleTwitterApp" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PostDisplayShould (2)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.codurance.unittests in ConsoleTwitterApp" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Launcher" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TwitterShould" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -578,7 +608,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1349" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -597,7 +627,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15664062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38828126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38828126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.112706386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -656,14 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="360">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Clock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="420">
@@ -888,19 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -1062,9 +1071,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6754967" vertical-offset="0" max-vertical-offset="755">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.7350993" vertical-offset="0" max-vertical-offset="755">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.615894" vertical-offset="0" max-vertical-offset="755">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
