@@ -8,8 +8,6 @@ import org.mockito.Matchers;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import java.time.LocalDateTime;
-
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
@@ -21,7 +19,7 @@ public class PostActionShould {
     private static final String INVALID_REQUEST = "Alice";
     private PostAction postAction;
     @Mock Repository repository;
-    private PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
+    private PostDisplay postDisplay = new PostDisplay(new TimeFormatter());
 
     @Before
     public void initialise() {

@@ -1,16 +1,14 @@
 package com.codurance.unittests;
 
-import com.codurance.Clock;
 import com.codurance.FollowAction;
 import com.codurance.PostDisplay;
 import com.codurance.Repository;
+import com.codurance.TimeFormatter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import java.time.LocalDateTime;
 
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
@@ -22,7 +20,7 @@ public class FollowActionShould {
     private static final String VALID_INPUT = "Alice follows Bob";
     private FollowAction followAction;
     @Mock Repository repository;
-    private PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
+    private PostDisplay postDisplay = new PostDisplay(new TimeFormatter());
 
     @Before
     public void initialise() {

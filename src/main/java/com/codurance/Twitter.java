@@ -1,11 +1,10 @@
 package com.codurance;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 public class Twitter {
     private final Repository repository = new Repository();
-    private final PostDisplay postDisplay = new PostDisplay(new Clock(LocalDateTime.now()));
+    private final PostDisplay postDisplay = new PostDisplay(new TimeFormatter());
     private final Console console;
     private ActionList actionList;
 

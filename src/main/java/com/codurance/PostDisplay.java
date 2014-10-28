@@ -1,13 +1,14 @@
 package com.codurance;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class PostDisplay {
 
-    private final Clock clock;
+    private final TimeFormatter timeFormatter;
 
-    public PostDisplay(Clock clock) {
-        this.clock = clock;
+    public PostDisplay(TimeFormatter timeFormatter) {
+        this.timeFormatter = timeFormatter;
     }
 
     public void displayAll(List<Post> posts, Console console) {
@@ -21,6 +22,7 @@ public class PostDisplay {
     }
 
     private String getTimeDifference(Post post) {
-        return clock.getTimeDifference(post.getPostCreationDateTime());
+        LocalDateTime timeNow = new Clock(LocalDateTime.now()).getLocalDateTime();
+        return timeFormatter.getTimeDifference(post.getPostCreationDateTime(), timeNow);
     }
 }

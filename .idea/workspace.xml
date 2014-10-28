@@ -25,11 +25,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="PostDisplay.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
+          <file leaf-file-name="FollowActionShould.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/FollowActionShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostActionShould.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostActionShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+                  <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Twitter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Twitter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+                  <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
                   <folding />
                 </state>
               </provider>
@@ -38,8 +58,8 @@
           <file leaf-file-name="ActionListShould.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+                  <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -60,11 +80,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="clockShould.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/clockShould.java">
+          <file leaf-file-name="TimeFormatterShould.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/TimeFormatterShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-                  <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+                  <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -75,9 +95,11 @@
           <file leaf-file-name="PostDisplayShould.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostDisplayShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.57615894" vertical-offset="0" max-vertical-offset="755">
-                  <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.7301808" vertical-offset="0" max-vertical-offset="735">
+                  <caret line="35" column="131" selection-start-line="35" selection-start-column="131" selection-end-line="35" selection-end-column="131" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -86,12 +108,36 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Clock.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Clock.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Clock.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5960265" vertical-offset="0" max-vertical-offset="755">
-                  <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostDisplay.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.49668875" vertical-offset="0" max-vertical-offset="755">
+                  <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TimeFormatter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/TimeFormatter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+                  <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -108,9 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/codurance/Timeline.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionInterface.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionsShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/User.java" />
         <option value="$PROJECT_DIR$/src/test/resources/com/codurance/acceptancetests/feature/ConsoleApp.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/Wall.java" />
@@ -138,14 +181,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/WallActionShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ReadActionShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/Post.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostActionShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/RepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/Console.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionsLists.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/FollowAction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/FollowActionShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codurance/Twitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/Launcher.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/TwitterShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/WallAction.java" />
@@ -153,10 +193,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ReadAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/PostAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/clockShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ClockShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/Clock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codurance/TimeFormatter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/TimeFormatterShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codurance/Twitter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/FollowActionShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostActionShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostDisplayShould.java" />
       </list>
@@ -416,28 +462,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="WallActionShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ConsoleTwitterApp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.codurance.unittests" />
-      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.WallActionShould" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="ActionListShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ConsoleTwitterApp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -460,12 +484,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="clockShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ClockShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ConsoleTwitterApp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.codurance.unittests" />
-      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.clockShould" />
+      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.ClockShould" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TimeFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConsoleTwitterApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.codurance.unittests" />
+      <option name="MAIN_CLASS_NAME" value="com.codurance.unittests.TimeFormatterShould" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -614,17 +660,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.com.codurance.unittests in ConsoleTwitterApp" />
       <item index="1" class="java.lang.String" itemvalue="Application.Launcher" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.clockShould" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ClockShould" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TimeFormatterShould" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.com.codurance.unittests in ConsoleTwitterApp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.clockShould" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Launcher" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WallActionShould" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TimeFormatterShould" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Launcher" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ClockShould" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ActionListShould" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -721,24 +767,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Actions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="390">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/TwitterShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
@@ -943,17 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Twitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/WallAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1054,37 +1071,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostActionShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21854305" vertical-offset="0" max-vertical-offset="755">
-          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/FollowActionShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1589404" vertical-offset="0" max-vertical-offset="755">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/ActionList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7350993" vertical-offset="0" max-vertical-offset="755">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,35 +1092,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Clock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5960265" vertical-offset="0" max-vertical-offset="755">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/clockShould.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/TimeFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/TimeFormatterShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/Twitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/ActionListShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/FollowActionShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostActionShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codurance/PostDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.49668875" vertical-offset="0" max-vertical-offset="755">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/codurance/unittests/PostDisplayShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57615894" vertical-offset="0" max-vertical-offset="755">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.7301808" vertical-offset="0" max-vertical-offset="735">
+          <caret line="35" column="131" selection-start-line="35" selection-start-column="131" selection-end-line="35" selection-end-column="131" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

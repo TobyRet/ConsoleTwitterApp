@@ -6,8 +6,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import java.time.LocalDateTime;
-
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -18,8 +16,7 @@ public class ActionListShould {
     @Mock FollowAction followAction;
     @Mock PostAction postAction;
     private String userInput = "Alice -> I like cake";
-    private Clock clock = new Clock(LocalDateTime.now());
-    private PostDisplay postDisplay = new PostDisplay(clock);
+    private PostDisplay postDisplay = new PostDisplay(new TimeFormatter());
     private Repository repository = new Repository();
 
     @Test public void
