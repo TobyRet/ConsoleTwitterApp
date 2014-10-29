@@ -15,6 +15,7 @@ public class Repository {
 
     public List<Post> getPostsFor(String userName) {
         List<Post> userPosts = posts.stream().filter(post -> post.getUser().equals(userName)).collect(Collectors.toList());
+        Collections.sort(userPosts);
         return userPosts;
     }
 
@@ -45,12 +46,12 @@ public class Repository {
         List<String> targetUsers = getFriendsFor(targetUser);
 
         targetUsers.stream().forEach(user -> wallPosts.addAll(getPostsFor(user)));
-        return wallPosts.stream().sorted().collect(Collectors.toList());
+        Collections.sort(wallPosts);
+        return wallPosts;
     }
 
     private List<String> getFriendsFor(String targetUser) {
         List<String> targetUsers = new ArrayList<>();
-
         getRelationships().keySet().stream().filter(key -> key.equals(targetUser)).forEach(key -> {
             targetUsers.add(key);
             targetUsers.addAll(getRelationships().get(key).stream().collect(Collectors.toList()));

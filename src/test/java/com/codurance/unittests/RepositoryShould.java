@@ -54,12 +54,13 @@ public class RepositoryShould {
         repository.createRelationship("Alice", "Toby");
 
         assertThat(repository.getWallPostsFor("Alice").size(), is(3));
-        assertThat(repository.getWallPostsFor("Alice").get(0).getMessage(), is("Alice message"));
+        assertThat(repository.getWallPostsFor("Alice").get(0).getMessage(), is("Another Alice message"));
         assertThat(repository.getWallPostsFor("Alice").get(1).getMessage(), is("Toby message"));
     }
 
     private void createDummyPosts() throws InterruptedException {
         Post alicePost1 = new Post("Alice", "Alice message", new Clock(LocalDateTime.now()));
+        Thread.sleep(1);
         Post tobyPost = new Post("Toby", "Toby message", new Clock(LocalDateTime.now()));
         Thread.sleep(1);
         Post alicePost2 = new Post("Alice", "Another Alice message", new Clock(LocalDateTime.now()));
