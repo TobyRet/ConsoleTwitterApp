@@ -16,15 +16,19 @@ public class TimeFormatter {
     private String formatTimeDifference(long difference) {
         String formattedTimeDifference = "";
 
-        if((int) difference < 60) {
+        if(Math.round(difference) == 1) {
+            formattedTimeDifference = String.valueOf(difference) + " second ago";
+        }
+
+        if(Math.round(difference) < 60) {
             formattedTimeDifference = String.valueOf(difference) + " seconds ago";
         }
 
-        if((int) difference == 60) {
+        if((Math.round(difference) >= 60) && (Math.round(difference) < 120)) {
             formattedTimeDifference = String.valueOf(difference / 60) + " minute ago";
         }
 
-        if((int) difference > 60) {
+        if(Math.round(difference) >= 120) {
             formattedTimeDifference = String.valueOf(difference / 60) + " minutes ago";
         }
         return formattedTimeDifference;
