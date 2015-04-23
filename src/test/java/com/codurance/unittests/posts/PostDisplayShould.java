@@ -1,6 +1,10 @@
-package com.codurance.unittests;
+package com.codurance.unittests.posts;
 
 import com.codurance.*;
+import com.codurance.Posts.Post;
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Time.Clock;
+import com.codurance.Time.TimeFormatter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -18,7 +22,8 @@ import static org.mockito.Mockito.when;
 public class PostDisplayShould {
 
     @Mock Console console;
-    @Mock TimeFormatter timeFormatter;
+    @Mock
+    TimeFormatter timeFormatter;
 
     @Test public void
     format_posts_for_printing() {

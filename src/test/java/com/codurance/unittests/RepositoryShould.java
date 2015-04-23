@@ -1,7 +1,7 @@
 package com.codurance.unittests;
 
-import com.codurance.Clock;
-import com.codurance.Post;
+import com.codurance.Time.Clock;
+import com.codurance.Posts.Post;
 import com.codurance.Repository;
 import org.junit.Before;
 import org.junit.Test;

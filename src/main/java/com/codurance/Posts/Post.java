@@ -1,6 +1,7 @@
-package com.codurance;
+package com.codurance.Posts;
 
 import java.time.LocalDateTime;
+import com.codurance.Time.Clock;
 
 public class Post implements Comparable<Post> {
     private final String message;

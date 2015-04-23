@@ -1,9 +1,9 @@
-package com.codurance.unittests;
+package com.codurance.unittests.actions;
 
-import com.codurance.FollowAction;
-import com.codurance.PostDisplay;
+import com.codurance.Actions.FollowAction;
+import com.codurance.Posts.PostDisplay;
 import com.codurance.Repository;
-import com.codurance.TimeFormatter;
+import com.codurance.Time.TimeFormatter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

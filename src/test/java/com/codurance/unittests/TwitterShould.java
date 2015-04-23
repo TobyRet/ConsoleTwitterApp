@@ -1,12 +1,17 @@
 package com.codurance.unittests;
 
-import com.codurance.*;
+import java.io.IOException;
+import com.codurance.Actions.ActionList;
+import com.codurance.Actions.FollowAction;
+import com.codurance.Actions.PostAction;
+import com.codurance.Actions.ReadAction;
+import com.codurance.Actions.WallAction;
+import com.codurance.Console;
+import com.codurance.Twitter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import java.io.IOException;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.any;

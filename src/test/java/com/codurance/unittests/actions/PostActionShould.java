@@ -1,6 +1,10 @@
-package com.codurance.unittests;
+package com.codurance.unittests.actions;
 
-import com.codurance.*;
+import com.codurance.Actions.PostAction;
+import com.codurance.Posts.Post;
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Repository;
+import com.codurance.Time.TimeFormatter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +22,8 @@ public class PostActionShould {
     private static final String VALID_REQUEST = "Alice -> Does anyone like beer?";
     private static final String INVALID_REQUEST = "Alice";
     private PostAction postAction;
-    @Mock Repository repository;
+    @Mock
+    Repository repository;
     private PostDisplay postDisplay = new PostDisplay(new TimeFormatter());
 
     @Before

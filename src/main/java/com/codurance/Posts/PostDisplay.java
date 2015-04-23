@@ -1,7 +1,10 @@
-package com.codurance;
+package com.codurance.Posts;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import com.codurance.Time.Clock;
+import com.codurance.Console;
+import com.codurance.Time.TimeFormatter;
 
 public class PostDisplay {
 

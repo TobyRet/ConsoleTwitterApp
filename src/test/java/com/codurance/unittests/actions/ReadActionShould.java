@@ -1,6 +1,10 @@
-package com.codurance.unittests;
+package com.codurance.unittests.actions;
 
-import com.codurance.*;
+import com.codurance.Actions.PostAction;
+import com.codurance.Actions.ReadAction;
+import com.codurance.Posts.Post;
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Repository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +20,8 @@ public class ReadActionShould {
     private static final String INVALID_REQUEST = "Alice -> I like beer";
     private static final String VALID_REQUEST = "Alice";
     private ReadAction readAction;
-    @Mock PostDisplay postDisplay;
+    @Mock
+    PostDisplay postDisplay;
     private Repository repository;
 
     @Before

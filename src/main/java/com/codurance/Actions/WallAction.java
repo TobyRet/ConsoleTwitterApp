@@ -1,4 +1,8 @@
-package com.codurance;
+package com.codurance.Actions;
+
+import com.codurance.Console;
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Repository;
 
 public class WallAction implements Actions {
 

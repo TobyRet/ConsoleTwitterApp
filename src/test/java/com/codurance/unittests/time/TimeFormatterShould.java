@@ -1,7 +1,7 @@
-package com.codurance.unittests;
+package com.codurance.unittests.time;
 
-import com.codurance.Clock;
-import com.codurance.TimeFormatter;
+import com.codurance.Time.Clock;
+import com.codurance.Time.TimeFormatter;
 import org.junit.Test;
 
 import java.time.LocalDateTime;

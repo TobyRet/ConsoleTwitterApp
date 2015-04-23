@@ -44,21 +44,21 @@ formatter.match({
   "location": "ConsoleSteps.i_have_a_message(String)"
 });
 formatter.result({
-  "duration": 743530000,
+  "duration": 163030061,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsoleSteps.i_post_my_message()"
 });
 formatter.result({
-  "duration": 65000,
+  "duration": 30959,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsoleSteps.view_my_timeline()"
 });
 formatter.result({
-  "duration": 69000,
+  "duration": 29203,
   "status": "passed"
 });
 formatter.match({
@@ -71,7 +71,50 @@ formatter.match({
   "location": "ConsoleSteps.i_should_see(String)"
 });
 formatter.result({
-  "duration": 89000,
+  "duration": 93926,
   "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "View timeline",
+  "description": "",
+  "id": "post-a-message;view-timeline",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 12,
+  "name": "I post a message \"Does anyone like beer?\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "I view my timeline",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "I should see \"Does anyone like beer?\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Does anyone like beer?",
+      "offset": 14
+    }
+  ],
+  "location": "ConsoleSteps.i_should_see(String)"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

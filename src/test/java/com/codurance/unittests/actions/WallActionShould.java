@@ -1,9 +1,9 @@
-package com.codurance.unittests;
+package com.codurance.unittests.actions;
 
-import com.codurance.Post;
-import com.codurance.PostDisplay;
+import com.codurance.Posts.Post;
+import com.codurance.Posts.PostDisplay;
 import com.codurance.Repository;
-import com.codurance.WallAction;
+import com.codurance.Actions.WallAction;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

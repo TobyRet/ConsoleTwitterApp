@@ -1,4 +1,4 @@
-package com.codurance;
+package com.codurance.Time;
 
 import java.time.LocalDateTime;
 

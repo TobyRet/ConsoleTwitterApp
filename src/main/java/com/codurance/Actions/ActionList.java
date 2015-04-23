@@ -1,6 +1,8 @@
-package com.codurance;
+package com.codurance.Actions;
 
 import java.util.ArrayList;
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Repository;
 
 public class ActionList implements Actions {
 

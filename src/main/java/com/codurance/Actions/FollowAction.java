@@ -1,4 +1,7 @@
-package com.codurance;
+package com.codurance.Actions;
+
+import com.codurance.Posts.PostDisplay;
+import com.codurance.Repository;
 
 public class FollowAction implements Actions {
 
